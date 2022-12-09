@@ -11,20 +11,20 @@ public class DateValsConversion {
 		// -3127699800000
 		// String s1 = "55-12-2022"; // If pass extra days in date value, extra month in
 		// month value then will be adjusted as during conversion.. like - 2023-01-24
-		String s1 = "55-12-2022";
+		String s1 = "21-11-1990";
 
 		SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
 		java.util.Date ud1 = sdf.parse(s1);
 		System.out.println("String Date Value :: " + s1);
 		System.out.println("Util Date :: " + ud1);
-
+		System.out.println();
 		// conversion java.util.Date class object to java.sq.Date class object
 		long ms = ud1.getTime(); // gives no. of milliseconds that elapsed b/w
 									// ud1 date and time and 2022 Dec 1st mid night 00:00 hrs (Epoch standard)
-		System.out.println("MS :: " + ms);
+		System.out.println("MS :: " + ms +"\n");
 		java.sql.Date sd1 = new java.sql.Date(ms);
 		System.out.println("Util Date :: " + ud1);
-		System.out.println("Util Date :: " + sd1);
+		System.out.println("Sql Date :: " + sd1);
 		System.out.println();
 		// if String date value pattern is yyyy-MM-dd pateern then it can be converted
 		// directly to

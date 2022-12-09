@@ -20,7 +20,7 @@ public class PsDateInsertTestOracle {
 
 			if (sc != null) {
 				System.out.println("Person name :: ");
-				name = sc.next();
+			name = sc.next();
 				System.out.println("Person DOB (dd-MM-yyyy) :: ");
 				sdob = sc.next();
 				System.out.println("Person DOJ (yyyy-MM-dd) :: ");
@@ -35,7 +35,7 @@ public class PsDateInsertTestOracle {
 				SimpleDateFormat sdf1 = new SimpleDateFormat("dd-MM-yyyy");
 				java.util.Date udob = sdf1.parse(sdob);
 			// converting java.util.Date class object to java.sql.Date class object
-				long ms = udob.getTime();
+   				long ms = udob.getTime();
 				java.sql.Date sqdob = new java.sql.Date(ms);
 
 			// for DOJ (yyyy-MM-dd - Direct conversion
