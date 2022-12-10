@@ -8,7 +8,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-public class InsertBlob {
+public class InsertBlobOracle {
 
 	private static final String INSERT_ARTIST_QUERY = "INSERT INTO ARTIST_INFO VALUES(AID_SEQ1.NEXTVAL,?,?,?)";
 
